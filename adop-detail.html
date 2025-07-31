@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./image/favicon.png" type="image/x-icon">
+  <title>Whisker | 命定毛孩 | 寵物大小事，我的每一日</title>
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="header__main-nav">
+      <div class="header__logo">
+        <a href="./index.html"><img src="./image/logo.png" alt=""></a>
+      </div>
+      <ul class="header__links">
+        <li class="header__links-li">
+          <button class="header__links-close-btn">
+            <img src="./image/icons/close-nav.png" alt="">
+          </button>
+          <ul class="header__links-link">
+            <li><a href="./post-list.html">毛孩大小事</a></li>
+            <li><a href="./adoption-page.html">領養專區</a></li>
+            <li class="disabled" style="display: none;"><a href="#">義賣捐助</a></li>
+            <li class="disabled"><a href="#">寵物食譜</a></li>
+          </ul>
+        </li>
+        <li style="display: none;">
+          <ul class="header__links-user">
+            <li class="header__links-user-cart"><a href="#"><img src="./image/icons/shopping-cart.png" alt=""></a></li>
+            <li class="direction-line"></li>
+            <li>
+              <a class="header__user" href="#">
+                <span class="header__user-image"><img src="./image/icons/male-user.png" alt=""></span>
+                <span class="username">Wang/登入</span>
+              </a>
+              <ul class="header__user-link">
+                <li><a href="#">個人設定</a></li>
+                <li><a href="#">我的留言</a></li>
+                <li><a href="#">我的收藏</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="header__links-aide">
+          <ul>
+            <li><a href="#"><img src="./image/icons/search.png" alt=""></a></li>
+            <li class="direction-line-horizontal"></li>
+            <li><a href="#"><img src="./image/icons/sun.png" alt=""></a></li>
+            <li class="direction-line-horizontal"></li>
+            <li><a href="#"><img src="./image/icons/Increase-font.png" alt=""></a></li>
+            <li class="direction-line-horizontal"></li>
+            <li><a href="#"><img src="./image/icons/decrease-font.png" alt=""></a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="header__list">
+        <div class="header__list-image">
+          <img src="./image/icons/menu.png" alt="">
+        </div>
+      </div>
+    </nav>
+    <nav class="header__sub-nav" style="display: none;">
+      <ul>
+        <li><a href="#">命定毛孩</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="main__adoption-detail title__container">
+      <!-- <a href="#" class="main__detail-prev-page title-icon title-icon--left-arrow">
+        返回上一頁
+      </a> -->
+      <div class="main__detail-image">
+        <img src="" alt="">
+      </div>
+      <div class="main__detail-info">
+
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer__info">
+      <div class="footer__info--logo">
+        <a href="#" class="footer__info--logo-image">
+          <img src="./image/logo.png" alt="">
+        </a>
+        <h3 class="footer__info--logo-slogan">毛孩大小事，我的每一日</h3>
+      </div>
+      <!-- <div class="footer__info--contact">
+        <h3>聯絡我們</h3>
+        <div class="footer__info--contact-content">
+          <p>台中市西屯區台灣大道一段10號之八</p>
+          <p>TEL:04-2224-4432</p>
+        </div>
+      </div> -->
+      <div class="footer__info--links">
+        <h3>聯絡我們</h3>
+        <div class="footer__info--links-content">
+          <a href="#">
+            <img src="./image/icons/Facebook.png" alt="">
+          </a>
+          <a href="#">
+            <img src="./image/icons/LINE.png" alt="">
+          </a>
+          <a href="#">
+            <img src="./image/icons/X.png" alt="">
+          </a>
+          <a href="#">
+            <img src="./image/icons/Instagram.png" alt="">
+          </a>
+        </div>
+      </div>
+      <!-- <div class="footer__info--fb"></div> -->
+    </div>
+    <div class="footer__copyright">
+      Copyright © [2025] [wang]. All rights reserved.
+    </div>
+  </footer>
+  <script src="./script/detail.js"></script>
+  <script>
+    let header = document.querySelector("header");
+    let headerList = header.querySelector(".header__list");
+    let headerLinksCloseBtn = header.querySelector(".header__links-close-btn");
+    let headerLinks = header.querySelector(".header__links");
+    let isHeaderLinksOpen = false;
+    // header bg opacity
+    let ticking = false;
+    function scrollChangeOpacity() {
+      if (window.scrollY == 0) {
+        header.classList.remove("header--scroll");
+      } else {
+        header.classList.add("header--scroll");
+      }
+      ticking = false;
+    }
+    window.addEventListener("scroll", () => {
+      if (!ticking) {
+        window.requestAnimationFrame(scrollChangeOpacity);
+        ticking = true;
+      }
+    });
+    // nav list
+    headerList.addEventListener("click", () => {
+      isHeaderLinksOpen = !isHeaderLinksOpen;
+      if (isHeaderLinksOpen) {
+        headerLinks.classList.add("header__links--open");
+      } else {
+        headerLinks.classList.remove("header__links--open");
+      }
+    });
+    headerLinksCloseBtn.addEventListener("click", function () {
+      isHeaderLinksOpen = false;
+      headerLinks.classList.remove("header__links--open");
+    });
+  </script>
+</body>
+
+</html>

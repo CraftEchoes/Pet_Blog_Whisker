@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./image/favicon.png" type="image/x-icon">
+  <title>Whisker | 寵物大小事，我的每一日</title>
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="header__main-nav">
+      <div class="header__logo">
+        <a href="./index.html"><img src="./image/logo.png" alt=""></a>
+      </div>
+      <ul class="header__links">
+        <li class="header__links-li">
+          <button class="header__links-close-btn">
+            <img src="./image/icons/close-nav.png" alt="">
+          </button>
+          <ul class="header__links-link">
+            <li><a href="./post-list.html">毛孩大小事</a></li>
+            <li><a href="./adoption-page.html">領養專區</a></li>
+            <li class="disabled" style="display: none;"><a href="#">義賣捐助</a></li>
+            <li class="disabled"><a href="#">寵物食譜</a></li>
+          </ul>
+        </li>
+        <li style="display: none;">
+          <ul class="header__links-user">
+            <li class="header__links-user-cart"><a href="#"><img src="./image/icons/shopping-cart.png" alt=""></a></li>
+            <li class="direction-line"></li>
+            <li>
+              <a class="header__user" href="#">
+                <span class="header__user-image"><img src="./image/icons/male-user.png" alt=""></span>
+                <span class="username">Wang/登入</span>
+              </a>
+              <ul class="header__user-link">
+                <li><a href="#">個人設定</a></li>
+                <li><a href="#">我的留言</a></li>
+                <li><a href="#">我的收藏</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="header__links-aide">
+          <ul>
+            <li><a href="#"><img src="./image/icons/search.png" alt=""></a></li>
+            <li class="direction-line-horizontal"></li>
+            <li><a href="#"><img src="./image/icons/sun.png" alt=""></a></li>
+            <li class="direction-line-horizontal"></li>
+            <li><a href="#"><img src="./image/icons/Increase-font.png" alt=""></a></li>
+            <li class="direction-line-horizontal"></li>
+            <li><a href="#"><img src="./image/icons/decrease-font.png" alt=""></a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="header__list">
+        <div class="header__list-image">
+          <img src="./image/icons/menu.png" alt="">
+        </div>
+      </div>
+    </nav>
+    <nav class="header__sub-nav">
+      <ul>
+        <li><a href="#index_main__carousel">焦點貼文</a></li>
+        <li><a href="#index_main__vote">熱門投票</a></li>
+        <li><a href="#index_main__adopt">浪浪等家中</a></li>
+        <li><a href="#index_main__post--days">鏟屎日常</a></li>
+        <li><a href="#index_main__post--healthy">寵物健康</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="main__carousel title__container" id="index_main__carousel">
+      <h2 class="title-icon title-icon--cat">焦點貼文</h2>
+      <div class="main__carousel-container">
+        <div class="main__carousel-large">
+          <div class="main__carousel-large__wrapper">
+            <a class="main__carousel__card main__carousel__card--large" href="./post-detail.html" data-index="1">
+              <img src="./image/post/post-6.png" alt="">
+              <div class="main__carousel__title main__carousel__title--large">
+                <h3>盛夏的午後冒險</h3>
+                <div class="main__carousel__info">
+                  <div class="main__carousel__tags main__carousel__tags--large">
+                    <span class="card__tag card__tag--dog">狗狗</span>
+                    <span class="card__tag card__tag--day">鏟屎日常</span>
+                  </div>
+                  <div class="main__carousel__time main__carousel__time--large">2025-04-21</div>
+                </div>
+              </div>
+            </a>
+            <a class="main__carousel__card main__carousel__card--large" href="./post-detail.html" data-index="2">
+              <img src="./image/post/post-2.png" alt="">
+              <div class="main__carousel__title main__carousel__title--large">
+                <h3>貓貓的新玩具實測</h3>
+                <div class="main__carousel__info">
+                  <div class="main__carousel__tags main__carousel__tags--large">
+                    <span class="card__tag card__tag--dog">貓咪</span>
+                    <span class="card__tag card__tag--day">鏟屎日常</span>
+                  </div>
+                  <div class="main__carousel__time main__carousel__time--large">2025-04-20</div>
+                </div>
+              </div>
+            </a>
+            <a class="main__carousel__card main__carousel__card--large" href="./post-detail.html" data-index="3">
+              <div class="main__carousel-img"><img src="./image/post/post-1.png" alt=""></div>
+              <div class="main__carousel__title main__carousel__title--large">
+                <h3>帶你回家的第一天</h3>
+                <div class="main__carousel__info">
+                  <div class="main__carousel__tags main__carousel__tags--large">
+                    <span class="card__tag card__tag--dog">貓貓</span>
+                    <span class="card__tag card__tag--day">寵物健康</span>
+                  </div>
+                  <div class="main__carousel__time main__carousel__time--large">2025-04-18</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="main__carousel-large__tab-bar">
+            <span class="carousel__tab-dot" data-index="1" class="active"></span>
+            <span class="carousel__tab-dot" data-index="2"></span>
+            <span class="carousel__tab-dot" data-index="3"></span>
+          </div>
+        </div>
+        <div class="main__carousel-groups">
+          <div class="main__carousel-groups__thumb">
+            <a class="main__carousel__card main__carousel__card--small" href="./post-detail.html">
+              <div class="main__carousel-img"><img src="./image/carousel/thumb-group-1.jpg" alt=""></div>
+              <div class="main__carousel__title main__carousel__title--small">
+                <h3>寵物攝影小技巧</h3>
+                <div class="main__carousel__info">
+                  <div class="main__carousel__tags main__carousel__tags--small">
+                    <span class="card__tag card__tag--cat">貓貓</span>
+                    <span class="card__tag card__tag--healthy">鏟屎日常</span>
+                  </div>
+                  <div class="main__carousel__time">2023-10-11</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="main__carousel-groups__thumb">
+            <a class="main__carousel__card main__carousel__card--small" href="./post-detail.html">
+              <div class="main__carousel-img"><img src="./image/carousel/thumb-group-2.jpg" alt=""></div>
+              <div class="main__carousel__title main__carousel__title--small">
+                <h3>毛孩保健日常</h3>
+                <div class="main__carousel__info">
+                  <div class="main__carousel__tags main__carousel__tags--small">
+                    <span class="card__tag card__tag--cat">貓貓</span>
+                    <span class="card__tag card__tag--healthy">寵物健康</span>
+                  </div>
+                  <div class="main__carousel__time">2023-10-11</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="main__carousel-groups__thumb">
+            <a class="main__carousel__card main__carousel__card--small" href="./post-detail.html">
+              <div class="main__carousel-img"><img src="./image/carousel/thumb-group-3.jpg" alt=""></div>
+              <div class="main__carousel__title main__carousel__title--small">
+                <h3>貓咪為何都在睡？</h3>
+                <div class="main__carousel__info">
+                  <div class="main__carousel__tags main__carousel__tags--small">
+                    <span class="card__tag card__tag--cat">貓貓</span>
+                    <span class="card__tag card__tag--healthy">寵物健康</span>
+                  </div>
+                  <div class="main__carousel__time">2023-10-11</div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main__vote title__container" id="index_main__vote">
+      <h2 class="title-icon title-icon--dog">熱門投票</h2>
+      <div>
+        <div class="main__vote-question">
+          <img src="./image/question-role.png" alt="">
+          <h2>寵物大哉問</h2>
+          <p class="main__vote-subtitle">請問各位家中毛孩們主要的食物是甚麼呢？</p>
+          <div class="main__vote-info">
+            <time class="main__vote-endtime">03:20:18:55 後結束</time>
+            <span class="main__vote-participant">53人已參加</span>
+          </div>
+        </div>
+        <div class="main__vote-chooses">
+          <div class="main__vote-area">
+            <div class="main__vote-group">
+              <div class="main__vote-options">
+                <div class="main__vote-option">
+                  <input type="radio" name="vote" id="vote-1" value="飼料">
+                  <label for="vote-1">
+                    <div class="main__vote-label">飼料</div>
+                    <div class="main__vote-decorate">
+                      <img src="./image/icons/check.png" alt="">
+                    </div>
+                  </label>
+                </div>
+                <div class="main__vote-option">
+                  <input type="radio" name="vote" id="vote-2" value="鮮食">
+                  <label for="vote-2">
+                    <div class="main__vote-label">鮮食</div>
+                    <div class="main__vote-decorate">
+                      <img src="./image/icons/check.png" alt="">
+                    </div>
+                  </label>
+                </div>
+                <div class="main__vote-option">
+                  <input type="radio" name="vote" id="vote-3" value="飯菜">
+                  <label for="vote-3">
+                    <div class="main__vote-label">飯菜</div>
+                    <div class="main__vote-decorate">
+                      <img src="./image/icons/check.png" alt="">
+                    </div>
+                  </label>
+                </div>
+                <div class="main__vote-option">
+                  <input type="radio" name="vote" id="vote-4" value="罐頭">
+                  <label for="vote-4">
+                    <div class="main__vote-label">罐頭</div>
+                    <div class="main__vote-decorate">
+                      <img src="./image/icons/check.png" alt="">
+                    </div>
+                  </label>
+                </div>
+                <div class="main__vote-option">
+                  <input type="radio" name="vote" id="vote-5" value="其他">
+                  <label for="vote-5">
+                    <div class="main__vote-label">其他</div>
+                    <div class="main__vote-decorate">
+                      <img src="./image/icons/check.png" alt="">
+                    </div>
+                  </label>
+                </div>
+              </div>
+              <button type="button" class="main__vote-submit" disabled>投票</button>
+            </div>
+            <div class="main__vote-area--result">
+              <canvas id="vote-chart-canvas"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main__adopt title__container" id="index_main__adopt">
+      <div class="main__title--group">
+        <h2 class="title-icon title-icon--cow">浪浪等家中</h2>
+        <a href="./adoption-page.html">查看更多</a>
+      </div>
+      <div class="main__adopt-content">
+        <div class="main__cards">
+          <a target="_blank" class="main__cards-card" href="./adop-detail.html?&animal_subid=DAAAG1140328003&%20%20%20%20&animal_place=新竹縣動物保護教育園區%20%20%20%20&animal_kind=貓%20%20%20%20&animal_Variety=混種貓%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20&animal_sex=M%20%20%20%20&animal_bodytype=MEDIUM%20%20%20%20&animal_colour=黃色%20%20%20%20&animal_title=%20%20%20%20&animal_status=OPEN%20%20%20%20&animal_remark=左前肢外傷已復原%20%20%20%20&animal_createtime=2025/03/28%20%20%20%20&shelter_address=新竹縣竹北市縣政五街192號%20%20%20%20&shelter_tel=03-5519548%20%20%20%20&shelter_name=新竹縣動物保護教育園區%20%20%20%20&album_file=https://www.pet.gov.tw/upload/pic/1744121663666.png">
+            <div class="main__cards-card-main">
+              <div class="main__cards-card-main-image">
+                <img src="./image/data/1744121663666.png" alt="">
+                <div class="main__cards-card-main-type">
+                  <img src="./image/icons/cat.png" alt="">
+                </div>
+              </div>
+              <div class="main__cards-card-main-status">
+                開放認養
+              </div>
+              <div class="main__cards-card-main-gender">
+                <img src="./image/icons/boy.png" alt="">
+              </div>
+              <div class="main__cards-card-main-city">
+                新竹市
+              </div>
+            </div>
+            <div class="main__cards-card-info">
+              <div class="main__cards-card-info-place">新竹縣動物保護教育園區</div>
+              <div class="main__cards-card-info-bodyType">中型</div>
+              <div class="main__cards-card-info-createtime">入園共 17 天</div>
+              <div class="main__cards-card-info-subid">收容編號 DAAAG1140328003</div>
+            </div>
+          </a>
+          <a target="_blank" class="main__cards-card" href="./adop-detail.html?&animal_subid=CAAAG1140211003&%20%20%20%20&animal_place=%E6%A1%83%E5%9C%92%E5%B8%82%E5%8B%95%E7%89%A9%E4%BF%9D%E8%AD%B7%E6%95%99%E8%82%B2%E5%9C%92%E5%8D%80%20%20%20%20&animal_kind=%E8%B2%93%20%20%20%20&animal_Variety=%E6%B7%B7%E7%A8%AE%E8%B2%93%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20&animal_sex=F%20%20%20%20&animal_bodytype=MEDIUM%20%20%20%20&animal_colour=%E8%99%8E%E6%96%91%E8%89%B2%20%20%20%20&animal_title=%20%20%20%20&animal_status=OPEN%20%20%20%20&animal_remark=%20%20%20%20&animal_createtime=2025/02/11%20%20%20%20&shelter_address=%E6%A1%83%E5%9C%92%E5%B8%82%E6%96%B0%E5%B1%8B%E5%8D%80%E6%B0%B8%E8%88%88%E9%87%8C3%E9%84%B0%E8%97%BB%E7%A4%81%E8%B7%AF1668%E8%99%9F%20%20%20%20&shelter_tel=03-4861760%20%20%20%20&shelter_name=%E6%A1%83%E5%9C%92%E5%B8%82%E5%8B%95%E7%89%A9%E4%BF%9D%E8%AD%B7%E6%95%99%E8%82%B2%E5%9C%92%E5%8D%80%20%20%20%20&album_file=https://www.pet.gov.tw/upload/pic/1739262468087.png">
+            <div class="main__cards-card-main">
+              <div class="main__cards-card-main-image">
+                <img src="./image/data/1742377482530.png" alt="">
+                <div class="main__cards-card-main-type">
+                  <img src="./image/icons/dog.png" alt="">
+                </div>
+              </div>
+              <div class="main__cards-card-main-status">
+                開放認養
+              </div>
+              <div class="main__cards-card-main-gender">
+                <img src="./image/icons/boy.png" alt="">
+              </div>
+              <div class="main__cards-card-main-city">
+                桃園市
+              </div>
+            </div>
+            <div class="main__cards-card-info">
+              <div class="main__cards-card-info-place">桃園市動物保護教育園區</div>
+              <div class="main__cards-card-info-bodyType">中型</div>
+              <div class="main__cards-card-info-createtime">入園共 62 天</div>
+              <div class="main__cards-card-info-subid">收容編號 CAAAG1140211003</div>
+            </div>
+          </a>
+          <a target="_blank" class="main__cards-card" href="./adop-detail.html?&animal_subid=AAAEG1140319006&%20%20%20%20&animal_place=新北市中和區公立動物之家%20%20%20%20&animal_kind=狗%20%20%20%20&animal_Variety=混種犬%20%20%20%20%20%20%20%20%20%20%20%20%20%20&animal_sex=M%20%20%20%20&animal_bodytype=MEDIUM%20%20%20%20&animal_colour=黃色%20%20%20%20&animal_title=%20%20%20%20&animal_status=OPEN%20%20%20%20&animal_remark=%20%20%20%20&animal_createtime=2025/03/19%20%20%20%20&shelter_address=新北市中和區興南路三段100號%20%20%20%20&shelter_tel=02-86685547%20%20%20%20&shelter_name=新北市中和區公立動物之家%20%20%20%20&album_file=https://www.pet.gov.tw/upload/pic/1742377482530.png">
+            <div class="main__cards-card-main">
+              <div class="main__cards-card-main-image">
+                <img src="./image/data/1739262468087.png" alt="">
+                <div class="main__cards-card-main-type">
+                  <img src="./image/icons/cat.png" alt="">
+                </div>
+              </div>
+              <div class="main__cards-card-main-status">
+                開放認養
+              </div>
+              <div class="main__cards-card-main-gender">
+                <img src="./image/icons/boy.png" alt="">
+              </div>
+              <div class="main__cards-card-main-city">
+                新北市
+              </div>
+            </div>
+            <div class="main__cards-card-info">
+              <div class="main__cards-card-info-place">新北市中和區公立動物之家</div>
+              <div class="main__cards-card-info-bodyType">中型</div>
+              <div class="main__cards-card-info-createtime">入園共 26 天</div>
+              <div class="main__cards-card-info-subid">收容編號 AAAEG1140319006</div>
+            </div>
+          </a>
+          <a target="_blank" class="main__cards-card" href="./adop-detail.html?&animal_subid=CAAAG1140225007&%20%20%20%20&animal_place=桃園市動物保護教育園區%20%20%20%20&animal_kind=狗%20%20%20%20&animal_Variety=混種犬%20%20%20%20%20%20%20%20%20%20%20%20%20%20&animal_sex=M%20%20%20%20&animal_bodytype=SMALL%20%20%20%20&animal_colour=黃色%20%20%20%20&animal_title=%20%20%20%20&animal_status=OPEN%20%20%20%20&animal_remark=我在南昌動物保護教育園區。%20%20%20%20&animal_createtime=2025/02/25%20%20%20%20&shelter_address=桃園市新屋區永興里3鄰藻礁路1668號%20%20%20%20&shelter_tel=03-4861760%20%20%20%20&shelter_name=桃園市動物保護教育園區%20%20%20%20&album_file=https://www.pet.gov.tw/upload/pic/1740461115333.png">
+            <div class="main__cards-card-main">
+              <div class="main__cards-card-main-image">
+                <img src="./image/data/1740461115333.png" alt="">
+                <div class="main__cards-card-main-type">
+                  <img src="./image/icons/dog.png" alt="">
+                </div>
+              </div>
+              <div class="main__cards-card-main-status">
+                開放認養
+              </div>
+              <div class="main__cards-card-main-gender">
+                <img src="./image/icons/boy.png" alt="">
+              </div>
+              <div class="main__cards-card-main-city">
+                桃園市
+              </div>
+            </div>
+            <div class="main__cards-card-info">
+              <div class="main__cards-card-info-place">桃園市動物保護教育園區</div>
+              <div class="main__cards-card-info-bodyType">小型</div>
+              <div class="main__cards-card-info-createtime">入園共 48 天</div>
+              <div class="main__cards-card-info-subid">收容編號 CAAAG1140225007</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="main__content">
+      <div class="main__content-post">
+        <div class="main__post--days" id="index_main__post--days" style="scroll-margin-top: 170px;">
+          <div class="main__title--group">
+            <h2 class="title-icon title-icon--horse">鏟屎日常</h2>
+            <a href="./post-list.html">查看更多</a>
+          </div>
+          <div class="main__cards main__cards--aside">
+            <div class="main__cards-card">
+              <div class="main__cards-card-img">
+                <img src="./image/post/post-6.png" alt="">
+              </div>
+              <a href="./post-detail.html" class="main__cards-card-area">
+                <h3>盛夏的午後冒險</h3>
+                <p>每當午後陽光灑落，小圓總愛把頭伸出窗外，感受風的溫度...</p>
+                <div class="main__card-info">
+                  <div class="main__tags">
+                    <span class="card__tag card__tag--cat">狗狗</span>
+                    <span class="card__tag card__tag--day">寵物日常</span>
+                  </div>
+                  <div class="main__card-info-time">2025-04-21</div>
+                </div>
+              </a>
+            </div>
+            <div class="main__cards-card">
+              <div class="main__cards-card-img">
+                <img src="./image/post/post-1.png" alt="">
+              </div>
+              <a href="./post-detail.html" class="main__cards-card-area">
+                <h3>寵物攝影小技巧</h3>
+                <p>用手機也能拍出專業寵物寫真？今天分享 5 個實用秘訣...</p>
+                <div class="main__card-info">
+                  <div class="main__tags">
+                    <span class="card__tag card__tag--cat">貓咪</span>
+                    <span class="card__tag card__tag--day">鏟屎日常</span>
+                  </div>
+                  <div class="main__card-info-time">2023-10-11</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="main__post--healthy" id="index_main__post--healthy">
+          <div class="main__title--group">
+            <h2 class="title-icon title-icon--turtle">寵物健康</h2>
+            <a href="./post-list.html">查看更多</a>
+          </div>
+          <div class="main__cards">
+            <div class="main__cards-card">
+              <div class="main__cards-card-img">
+                <img src="./image/post/post-1.png" alt="">
+              </div>
+              <a href="./post-detail.html" class="main__cards-card-area">
+                <h3>毛孩保健日常</h3>
+                <p>定期刷牙、按時除蚤是照顧毛孩健康的基本功，讓我們一起養成習慣！</p>
+                <div class="main__card-info">
+                  <div class="main__tags">
+                    <span class="card__tag card__tag--cat">寵物健康</span>
+                    <span class="card__tag card__tag--day">寵物日常</span>
+                  </div>
+                  <div class="main__card-info-time">2023-10-11</div>
+                </div>
+              </a>
+            </div>
+            <div class="main__cards-card">
+              <div class="main__cards-card-img">
+                <img src="./image/post/post-1.png" alt="">
+              </div>
+              <a href="./post-detail.html" class="main__cards-card-area">
+                <h3>貓咪為何都在睡？</h3>
+                <p>有沒有想過為何不論何時何地總是看到慵懶的貓咪？其實貓咪一天會需要大量的睡眠時間...</p>
+                <div class="main__card-info">
+                  <div class="main__tags">
+                    <span class="card__tag card__tag--cat">貓咪</span>
+                    <span class="card__tag card__tag--day">寵物日常</span>
+                  </div>
+                  <div class="main__card-info-time">2023-10-11</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <aside class="main__content-aside">
+        <div class="main__aside-hot">
+          <div class="main__title--group">
+            <h2 class="title-icon title-icon--hedgehog">熱門話題</h2>
+          </div>
+          <div class="main__cards main__cards--aside">
+            <div class="main__cards-card main__cards-card--aside">
+              <div class="main__cards-card-img">
+                <img src="./image/post/post-7.png" alt="">
+              </div>
+              <a href="./post-detail.html" class="main__cards-card-area">
+                <h3>寵物大哉問</h3>
+                <div class="main__card-info">
+                  <div class="main__tags">
+                    <span class="card__tag card__tag--cat">貓咪</span>
+                    <span class="card__tag card__tag--day">寵物日常</span>
+                  </div>
+                  <div class="main__card-info-time">2023-10-11</div>
+                </div>
+              </a>
+            </div>
+            <div class="main__cards-card main__cards-card--aside">
+              <div class="main__cards-card-img">
+                <img src="./image/post/post-8.png" alt="">
+              </div>
+              <a href="./post-detail.html" class="main__cards-card-area">
+                <h3>盛夏的午後冒險</h3>
+                <div class="main__card-info">
+                  <div class="main__tags">
+                    <span class="card__tag card__tag--cat">貓咪</span>
+                    <span class="card__tag card__tag--day">寵物日常</span>
+                  </div>
+                  <div class="main__card-info-time">2023-10-11</div>
+                </div>
+              </a>
+            </div>
+            <div class="main__cards-card main__cards-card--aside">
+              <div class="main__cards-card-img">
+                <img src="./image/post/post-9.png" alt="">
+              </div>
+              <a href="./post-detail.html" class="main__cards-card-area">
+                <h3>帶你回家的第一天</h3>
+                <div class="main__card-info">
+                  <div class="main__tags">
+                    <span class="card__tag card__tag--cat">貓咪</span>
+                    <span class="card__tag card__tag--day">寵物日常</span>
+                  </div>
+                  <div class="main__card-info-time">2023-10-11</div>
+                </div>
+              </a>
+            </div>
+            <div class="main__cards-card main__cards-card--aside">
+              <div class="main__cards-card-img">
+                <img src="./image/post/post-10.png" alt="">
+              </div>
+              <a href="./post-detail.html" class="main__cards-card-area">
+                <h3>樓梯邊的小確幸</h3>
+                <div class="main__card-info">
+                  <div class="main__tags">
+                    <span class="card__tag card__tag--cat">貓咪</span>
+                    <span class="card__tag card__tag--day">寵物日常</span>
+                  </div>
+                  <div class="main__card-info-time">2023-10-11</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="main__aside-vote">
+          <div class="main__title--group">
+            <h2 class="title-icon title-icon--snake1">火熱投票</h2>
+          </div>
+          <div class="main__cards main__cards--aside">
+            <div class="main__cards-card main__cards-card--aside">
+              <div class="main__cards-card-img">
+                <img src="./image/post/post-2.png" alt="">
+              </div>
+              <a href="./post-detail.html" class="main__cards-card-area">
+                <h3>毛孩飲食調查</h3>
+                <div class="main__card-info">
+                  <div class="main__tags">
+                    <span class="card__tag card__tag--cat">貓咪</span>
+                    <span class="card__tag card__tag--day">寵物日常</span>
+                  </div>
+                  <div class="main__card-info-time">2023-10-11</div>
+                </div>
+              </a>
+            </div>
+            <div class="main__cards-card main__cards-card--aside">
+              <div class="main__cards-card-img">
+                <img src="./image/post/post-3.png" alt="">
+              </div>
+              <a href="./post-detail.html" class="main__cards-card-area">
+                <h3>毛孩最愛的家人</h3>
+                <div class="main__card-info">
+                  <div class="main__tags">
+                    <span class="card__tag card__tag--cat">貓咪</span>
+                    <span class="card__tag card__tag--day">寵物日常</span>
+                  </div>
+                  <div class="main__card-info-time">2023-10-11</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </section>
+  </main>
+  <footer>
+    <div class="footer__info">
+      <div class="footer__info--logo">
+        <a href="#" class="footer__info--logo-image">
+          <img src="./image/logo.png" alt="">
+        </a>
+        <h3 class="footer__info--logo-slogan">毛孩大小事，我的每一日</h3>
+      </div>
+      <!-- <div class="footer__info--contact">
+        <h3>聯絡我們</h3>
+        <div class="footer__info--contact-content">
+          <p>台中市西屯區台灣大道一段10號之八</p>
+          <p>TEL:04-2224-4432</p>
+        </div>
+      </div> -->
+      <div class="footer__info--links">
+        <h3>聯絡我們</h3>
+        <div class="footer__info--links-content">
+          <a href="#">
+            <img src="./image/icons/Facebook.png" alt="">
+          </a>
+          <a href="#">
+            <img src="./image/icons/LINE.png" alt="">
+          </a>
+          <a href="#">
+            <img src="./image/icons/X.png" alt="">
+          </a>
+          <a href="#">
+            <img src="./image/icons/Instagram.png" alt="">
+          </a>
+        </div>
+      </div>
+      <!-- <div class="footer__info--fb"></div> -->
+    </div>
+    <div class="footer__copyright">
+      Copyright © [2025] [wang]. All rights reserved.
+    </div>
+  </footer>
+  <!-- chartJs -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./script/carousel.js"></script>
+  <script src="./script/vote.js"></script>
+  <script src="./script/main.js"></script>
+</body>
+
+</html>

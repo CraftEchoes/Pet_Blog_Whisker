@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./image/favicon.png" type="image/x-icon">
+  <title>Whisker | 領養專區 | 寵物大小事，我的每一日</title>
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="header__main-nav">
+      <div class="header__logo">
+        <a href="./index.html"><img src="./image/logo.png" alt=""></a>
+      </div>
+      <ul class="header__links">
+        <li class="header__links-li">
+          <button class="header__links-close-btn">
+            <img src="./image/icons/close-nav.png" alt="">
+          </button>
+          <ul class="header__links-link">
+            <li><a href="./post-list.html">毛孩大小事</a></li>
+            <li><a href="./adoption-page.html">領養專區</a></li>
+            <li class="disabled" style="display: none;"><a href="#">義賣捐助</a></li>
+            <li class="disabled"><a href="#">寵物食譜</a></li>
+          </ul>
+        </li>
+        <li style="display: none;">
+          <ul class="header__links-user">
+            <li class="header__links-user-cart"><a href="#"><img src="./image/icons/shopping-cart.png" alt=""></a></li>
+            <li class="direction-line"></li>
+            <li>
+              <a class="header__user" href="#">
+                <span class="header__user-image"><img src="./image/icons/male-user.png" alt=""></span>
+                <span class="username">Wang/登入</span>
+              </a>
+              <ul class="header__user-link">
+                <li><a href="#">個人設定</a></li>
+                <li><a href="#">我的留言</a></li>
+                <li><a href="#">我的收藏</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="header__links-aide">
+          <ul>
+            <li><a href="#"><img src="./image/icons/search.png" alt=""></a></li>
+            <li class="direction-line-horizontal"></li>
+            <li><a href="#"><img src="./image/icons/sun.png" alt=""></a></li>
+            <li class="direction-line-horizontal"></li>
+            <li><a href="#"><img src="./image/icons/Increase-font.png" alt=""></a></li>
+            <li class="direction-line-horizontal"></li>
+            <li><a href="#"><img src="./image/icons/decrease-font.png" alt=""></a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="header__list">
+        <div class="header__list-image">
+          <img src="./image/icons/menu.png" alt="">
+        </div>
+      </div>
+    </nav>
+    <nav class="header__sub-nav">
+      <ul>
+        <li><a href="#">毛孩搜尋</a></li>
+        <li><a href="#adoption_life-pet">命定毛孩</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="adoption">
+    <section class="main__form title__container">
+      <h2 class="title-icon title-icon--snake2">毛孩搜尋</h2>
+      <form action="" class="main__filter">
+        <div class="main__filter-item" data-key="city">
+          <h3>所在縣市</h3>
+          <div class="main__filter-list main__filter-list--city">
+            <div class="main__filter-all-option">
+              <input type="checkbox" name="all-city-option" id="all-city-option">
+              <label for="all-city-option">全選/全不選</label>
+            </div>
+          </div>
+        </div>
+        <div class="main__filter-item" data-key="type">
+          <h3>類型</h3>
+          <div class="main__filter-list main__filter-list--type">
+            <div class="main__filter-option">
+              <input type="checkbox" name="adoption-filter-dog" id="adoption-filter-dog" value="狗">
+              <label for="adoption-filter-dog">狗狗</label>
+            </div>
+            <div class="main__filter-option">
+              <input type="checkbox" name="adoption-filter-cat" id="adoption-filter-cat" value="貓">
+              <label for="adoption-filter-cat">貓咪</label>
+            </div>
+          </div>
+        </div>
+        <div class="main__filter-item" data-key="gender">
+          <h3>性別</h3>
+          <div class="main__filter-list main__filter-list--gender">
+            <div class="main__filter-option">
+              <input type="checkbox" name="adoption-filter-boy" id="adoption-filter-boy" value="M">
+              <label for="adoption-filter-boy">男生</label>
+            </div>
+            <div class="main__filter-option">
+              <input type="checkbox" name="adoption-filter-girl" id="adoption-filter-girl" value="F">
+              <label for="adoption-filter-girl">女生</label>
+            </div>
+          </div>
+        </div>
+        <div class="main__filter-item" data-key="bodytype">
+          <h3>體型</h3>
+          <div class="main__filter-list main__filter-list--bodytype">
+            <div class="main__filter-option">
+              <input type="checkbox" name="adoption-filter-small" id="adoption-filter-small" value="SMALL">
+              <label for="adoption-filter-small">小型</label>
+            </div>
+            <div class="main__filter-option">
+              <input type="checkbox" name="adoption-filter-medium" id="adoption-filter-medium" value="MEDIUM">
+              <label for="adoption-filter-medium">中型</label>
+            </div>
+            <div class="main__filter-option">
+              <input type="checkbox" name="adoption-filter-large" id="adoption-filter-large" value="LARGE">
+              <label for="adoption-filter-large">大型</label>
+            </div>
+          </div>
+        </div>
+        <div class="main__filter-item" data-key="status">
+          <h3>認養狀態</h3>
+          <div class="main__filter-list main__filter-list--status">
+            <div class="main__filter-option">
+              <input type="checkbox" name="adoption-filter-open" id="adoption-filter-open" value="OPEN">
+              <label for="adoption-filter-open">開放認養</label>
+            </div>
+            <div class="main__filter-option">
+              <input type="checkbox" name="adoption-filter-adopted" id="adoption-filter-adopted" value="ADOPTED">
+              <label for="adoption-filter-adopted">已認養</label>
+            </div>
+            <div class="main__filter-option">
+              <input type="checkbox" name="adoption-filter-other" id="adoption-filter-other" value="OTHER">
+              <label for="adoption-filter-other">其他</label>
+            </div>
+          </div>
+        </div>
+        <div class="main__filter-control">
+          <button type="submit" class="main__filter-submit">送出</button>
+          <button type="reset" class="main__filter-reset">清空篩選</button>
+        </div>
+      </form>
+    </section>
+    <section class="main__control">
+      <div class="main__control-search">
+        <div class="main__control-area">
+          <label for="control-search"></label>
+          <input type="text" placeholder="請輸入收容編號" id="control-search-input" maxlength="20">
+        </div>
+        <button type="button" id="control-search-submit" class="control-search-submit">搜尋</button>
+        <div class="main__control-search-notice"></div>
+      </div>
+      <div class="main__control-sort">
+        <select name="" id="control-select">
+          <option value="opendate-asc">開放認養日（新→舊）</option>
+          <option value="opendate-desc">開放認養日（舊→新）</option>
+          <option value="update-asc">最後更新時間（新→舊）</option>
+          <option value="update-desc">最後更新時間（舊→新）</option>
+          <option value="createtime-asc">資料建立時間（新→舊）</option>
+          <option value="createtime-desc">資料建立時間（舊→新）</option>
+        </select>
+      </div>
+    </section>
+    <section class="main__cards-container" id="adoption_life-pet" style="scroll-margin-top:180px;">
+      <!-- <a class="main__cards-card" href="#">
+        <div class="main__cards-card-main">
+          <div class="main__cards-card-main-image">
+            <img src="./image/Rectangle 51.png" alt="">
+            <div class="main__cards-card-main-type">
+              <img src="./image/icons/dog.png" alt="">
+            </div>
+          </div>
+          <div class="main__cards-card-main-status">
+            開放領養
+          </div>
+          <div class="main__cards-card-main-gender">
+            <img src="./image/icons/boy.png" alt="">
+          </div>
+          <div class="main__cards-card-main-city">
+            花蓮縣
+          </div>
+        </div>
+        <div class="main__cards-card-info">
+          <div class="main__cards-card-info-place">實際所在地</div>
+          <div class="main__cards-card-info-bodyType">體型大小</div>
+          <div class="main__cards-card-info-createtime">入園時間</div>
+          <div class="main__cards-card-info-subid">收容編號</div>
+        </div>
+      </a> -->
+    </section>
+  </main>
+  <footer>
+    <div class="footer__info">
+      <div class="footer__info--logo">
+        <a href="#" class="footer__info--logo-image">
+          <img src="./image/logo.png" alt="">
+        </a>
+        <h3 class="footer__info--logo-slogan">毛孩大小事，我的每一日</h3>
+      </div>
+      <!-- <div class="footer__info--contact">
+        <h3>聯絡我們</h3>
+        <div class="footer__info--contact-content">
+          <p>台中市西屯區台灣大道一段10號之八</p>
+          <p>TEL:04-2224-4432</p>
+        </div>
+      </div> -->
+      <div class="footer__info--links">
+        <h3>聯絡我們</h3>
+        <div class="footer__info--links-content">
+          <a href="#">
+            <img src="./image/icons/Facebook.png" alt="">
+          </a>
+          <a href="#">
+            <img src="./image/icons/LINE.png" alt="">
+          </a>
+          <a href="#">
+            <img src="./image/icons/X.png" alt="">
+          </a>
+          <a href="#">
+            <img src="./image/icons/Instagram.png" alt="">
+          </a>
+        </div>
+      </div>
+      <!-- <div class="footer__info--fb"></div> -->
+    </div>
+    <div class="footer__copyright">
+      Copyright © [2025] [wang]. All rights reserved.
+    </div>
+  </footer>
+  <script src="./script/adoption-filter.js"></script>
+  <script>
+    let header = document.querySelector("header");
+    let headerList = header.querySelector(".header__list");
+    let headerLinksCloseBtn = header.querySelector(".header__links-close-btn");
+    let headerLinks = header.querySelector(".header__links");
+    let isHeaderLinksOpen = false;
+    // header bg opacity
+    let ticking = false;
+    function scrollChangeOpacity() {
+      if (window.scrollY == 0) {
+        header.classList.remove("header--scroll");
+      } else {
+        header.classList.add("header--scroll");
+      }
+      ticking = false;
+    }
+    window.addEventListener("scroll", () => {
+      if (!ticking) {
+        window.requestAnimationFrame(scrollChangeOpacity);
+        ticking = true;
+      }
+    });
+    // nav list
+    headerList.addEventListener("click", () => {
+      isHeaderLinksOpen = !isHeaderLinksOpen;
+      if (isHeaderLinksOpen) {
+        headerLinks.classList.add("header__links--open");
+      } else {
+        headerLinks.classList.remove("header__links--open");
+      }
+    });
+    headerLinksCloseBtn.addEventListener("click", function () {
+      isHeaderLinksOpen = false;
+      headerLinks.classList.remove("header__links--open");
+    });
+  </script>
+</body>
+
+</html>
